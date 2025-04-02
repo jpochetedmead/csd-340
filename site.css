@@ -9,9 +9,9 @@ body {
   margin-right: 100px;
 }
 
-/* Headings styled with Cinzel or Bebas Neue (feel free to switch) */
+/* Headings styled with Cinzel */
 h1, h2, h3, h4 {
-  font-family: 'Cinzel', serif; /* or use 'Bebas Neue', sans-serif */
+  font-family: 'Cinzel', serif;
   background-color: #002D62; /* Dominican blue */
   color: #ffffff;
   border: 1px solid #D6A800; /* Gold accent */
