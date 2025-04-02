@@ -1,0 +1,35 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+}
+
+#container {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/* Headings styled with Cinzel or Bebas Neue (feel free to switch) */
+h1, h2, h3, h4 {
+  font-family: 'Cinzel', serif; /* or use 'Bebas Neue', sans-serif */
+  background-color: #002D62; /* Dominican blue */
+  color: #ffffff;
+  border: 1px solid #D6A800; /* Gold accent */
+  padding: 10px;
+}
+
+/* Anchor link (default) - Dominican Blue */
+a {
+  color: #002D62;
+  text-decoration: none;
+}
+
+/* Hover effect - Dominican Red */
+a:hover {
+  color: #C8102E;
+}
+
+/* Visited link - Gold to blend with the border accent */
+a:visited {
+  color: #D6A800;
+}
