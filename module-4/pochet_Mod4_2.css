@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel&family=Roboto&display=swap');
+
+/* Name: Julio Pochet
+   Assignment: Module 4.2 - Build a Web Page Exercise - Part 4
+*/
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+h1 {
+  font-family: 'Cinzel', serif;
+  background-color: #002D62; /* Blue */
+  color: #ffffff;
+  border: 1px solid #D6A800; /* Gold accent */
+  padding: 10px;
+  text-align: center;
+}
+
+h3 {
+  font-family: 'Cinzel', serif;
+  background-color: #002D62;
+  color: #ffffff;
+  border: 1px solid #D6A800;
+  padding: 10px;
+  text-align: center;
+  margin-top: 0;
+}
+
+#image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 10%;
+}
+
+#image-gallery > div {
+  border: 1px solid #D6A800;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+figure {
+  text-align: center;
+  margin: 10px 0;
+}
+
+figcaption {
+  font-style: italic;
+  font-size: 0.75em;
+  color: #D6A800;
+}
+
+a {
+  color: #002D62;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #C8102E;
+}
+
+a:visited {
+  color: #D6A800;
+}
