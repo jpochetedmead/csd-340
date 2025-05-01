@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    Author: Julio Pochet
+    Assignment 9.3 – JavaScript Part 1
+    Date: 04/26/2025
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julio Pochet">
+    <meta name="description" content="Assignment 9.3 for CSD 340">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Bellevue University">
+
+     <link rel="stylesheet" href="pochet_mod9_3.css">
+
+    <title>CSD 340 Web Development with HTML and CSS</title>
+
+    <script>
+        var place = "Dominican Republic";
+        var word1 = "exploring";
+        var word2 = "developer";
+        var word3 = "inspiration";
+    </script>
+</head>
+<body>
+    <div id="container">
+        <h1>Assignment 9.3: JavaScript - Part 1</h1>
+
+        <p>
+            I was born and raised in Villa Altagracia, a peaceful town in the 
+            <span id="place">_________</span>. Surrounded by nature, it shaped much of who I am today. 
+            Growing up, I loved spending time outdoors and 
+            <span id="word1">_________</span> the rivers and mountains nearby.
+        </p>
+
+        <p>
+            One of my favorite hobbies is working on creative tech projects. I’ve always been interested in software and web development. 
+            I enjoy building websites and learning how technology connects people. Today, I’m proud to be growing as a 
+            <span id="word2">_________</span>.
+        </p>
+
+        <p>
+            My daughter Juliette is a huge 
+            <span id="word3">_________</span> for me. Everything I do—whether it’s working, learning, or growing—is with her in mind.
+        </p>
+
+        <p>
+            <button onclick="document.getElementById('place').innerHTML = place;">Dominican Republic</button>
+            <button onclick="document.getElementById('word1').innerHTML = word1;">exploring</button>
+            <button onclick="document.getElementById('word2').innerHTML = word2;">developer</button>
+            <button onclick="document.getElementById('word3').innerHTML = word3;">inspiration</button>
+        </p>
+
+        <hr />
+
+        <address>
+            <p><a href="https://www.bellevue.edu" target="_blank">Bellevue University</a></p>
+            <p>1000 Galvin Road South</p>
+            <p>Bellevue, NE 68005</p>
+        </address>
+    </div>
+</body>
+</html>
