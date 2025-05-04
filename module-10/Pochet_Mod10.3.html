@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSD 340 Web Development with HTML and CSS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      transition: background-color 0.4s ease;
+      padding: 20px;
+      background-color: #f4f4f4;
+    }
+
+    h1 {
+      color: #222;
+    }
+
+    #message {
+      font-size: 1.2em;
+      margin: 20px 0;
+    }
+
+    .dr-gallery img {
+      width: 260px;
+      height: auto;
+      margin: 10px;
+      border: 3px solid transparent;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: transform 0.3s, border-color 0.3s;
+    }
+
+    .dr-gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .active {
+      border-color: #007bff;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Assignment 10.3: JavaScript - Part 2</h1>
+  <p id="message">Click on a Dominican Republic photo to explore a new scene!</p>
+
+  <div class="dr-gallery">
+    <img src="images/Dominican-Republic-sky-bayahibe-beach.jpg" alt="Bayahibe Beach" onclick="changeScene('beach', this)">
+    <img src="images/Dominican-Republic-Lake.jpg" alt="Mini Lake" onclick="changeScene('lake', this)">
+    <img src="images/Dominican-Mountain-Constanza.jpg" alt="Constanza Mountains" onclick="changeScene('mountains', this)">
+  </div>
+
+  <script>
+    /**
+     * Updates the background and message based on selected scene
+     * @param {string} location - Chosen location keyword
+     * @param {HTMLElement} element - Clicked image element
+     */
+    function changeScene(location, element) {
+      const body = document.body;
+      const message = document.getElementById("message");
+      const images = document.querySelectorAll(".dr-gallery img");
+
+      // Reset all active states
+      images.forEach(img => img.classList.remove("active"));
+
+      // Highlight the selected image
+      element.classList.add("active");
+
+      // Switch background and message
+      switch (location) {
+        case 'beach':
+          body.style.backgroundColor = '#fce38a';
+          message.textContent = "Relax at the stunning Bayahibe beach 🌴";
+          break;
+        case 'lake':
+          body.style.backgroundColor = '#a3d2ca';
+          message.textContent = "Enjoy the calm of a Dominican mini lake 💧";
+          break;
+        case 'mountains':
+          body.style.backgroundColor = '#dfe6e9';
+          message.textContent = "Take in the fresh air of Constanza’s mountains ⛰️";
+          break;
+      }
+    }
+  </script>
+
+</body>
+</html>
